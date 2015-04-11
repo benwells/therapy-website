@@ -1,0 +1,17 @@
+{
+  "name": "navon-therapy",
+  "description": "Navon Therapy Website",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "grunt": "latest",
+    "grunt-contrib-connect": "latest",
+    "grunt-contrib-watch": "latest",
+    "grunt-express-server": "latest",
+    "express": "latest"
+  },
+  "devDependencies": {
+    "body-parser": "^1.12.2",
+    "mongoose": "^4.0.1"
+  }
+}
