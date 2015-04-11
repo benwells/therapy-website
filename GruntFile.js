@@ -19,13 +19,23 @@ module.exports = function(grunt) {
         }
       }
     },
+    // watch: {
+    //   all: {
+    //     files: '**/*',
+    //     options: {
+    //       livereload: true,
+    //     },
+    //   },
+    // },
     watch: {
-      all: {
-        files: '**/*',
+      express: {
+        files:  [ '**/*.js', '**/*.jade' ],
+        tasks:  [ 'express:dev' ],
         options: {
           livereload: true,
-        },
-      },
+          spawn: false // for grunt-contrib-watch v0.5.0+, "nospawn: true" for lower versions. Without this option specified express won't be reloaded
+        }
+      }
     },
     express: {
       options: {
@@ -47,7 +57,8 @@ module.exports = function(grunt) {
 
   // Default task(s).
   grunt.registerTask('default', ['watch:all']);
-  grunt.registerTask('serve', ['express:dev']);
+  grunt.registerTask('serve',  [ 'express:dev', 'watch' ]);
+  // grunt.registerTask('serve', ['express:dev']);
   // grunt.registerTask('serve', ['connect:serve', 'watch:all']);
 
 

@@ -1,0 +1,58 @@
+// my-template.jade
+extends home-layout
+
+block head
+  meta(charset='utf-8')
+  meta(http-equiv='X-UA-Compatible', content='IE=edge')
+  meta(name='viewport', content='width=device-width, initial-scale=1')
+  meta(name='description', content='')
+  meta(name='author', content='')
+  link(href='/css/bootstrap.min.css', rel='stylesheet')
+  link(href='/css/styles.css', rel='stylesheet')
+  link(href='/font-awesome/css/font-awesome.min.css', rel='stylesheet', type='text/css')
+  link(href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,700,600', rel='stylesheet', type='text/css')
+  link(href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic', rel='stylesheet', type='text/css')
+
+  //if lt IE 9
+  <!--[if lt IE 9]>
+  <script src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js'></script>
+  <script src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js'></script>
+  <![endif]-->
+
+block nav
+  // Navigation
+  nav.navbar.navbar-default.topnav(role='navigation')
+    .container.topnav
+      // Brand and toggle get grouped for better mobile display
+      .navbar-header
+        button.navbar-toggle(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1')
+          span.sr-only Toggle navigation
+          span.icon-bar
+          span.icon-bar
+          span.icon-bar
+        a.navbar-brand.topnav(href='#')
+          img.brand(src='img/logo.png', alt='')
+      // Collect the nav links, forms, and other content for toggling
+      #bs-example-navbar-collapse-1.collapse.navbar-collapse
+        ul#navlist.nav.navbar-nav.navbar-right
+          li
+            a(href='#about') About
+          li
+            a(href='#services') Services
+          li
+            a(href='#contact') Contact
+      ul#hours.nav.navbar-nav.navbar-right
+        li
+          a(href='#')
+            table
+              tr
+                td.col1
+                  i.fa.fa-phone-square
+                td.col2 \(781\) 990-1035
+              tr
+                td.col1 Mon - Fri
+                td.col2 8:00am - 8:00pm
+              tr
+                td.col1
+                  Sat
+                td.col2 9:00am - 12:00pm

@@ -12,6 +12,7 @@
   },
   "devDependencies": {
     "body-parser": "^1.12.2",
+    "jade": "^1.9.2",
     "mongoose": "^4.0.1"
   }
 }
