@@ -1,4 +1,4 @@
-// my-template.jade
+// home-template.jade
 extends home-layout
 
 block head
@@ -48,7 +48,8 @@ block nav
               tr
                 td.col1
                   i.fa.fa-phone-square
-                td.col2 \(781\) 990-1035
+                td.col2 
+                  | (781) 990-1035
               tr
                 td.col1 Mon - Fri
                 td.col2 8:00am - 8:00pm
@@ -56,3 +57,45 @@ block nav
                 td.col1
                   Sat
                 td.col2 9:00am - 12:00pm
+
+block titlepane
+  <!-- Header -->
+  a(name='about')
+  .intro-header
+    .container
+      .row
+        .col-lg-12
+          .intro-message
+            .col-lg-6
+              h1 Marc and Michele Navon
+              h2
+                i Psychotherapists
+              hr.intro-divider
+            .col-lg-6
+              img#intro-img.img-rounded(src='img/mm.jpg', alt='')
+              h3#tagline
+                i
+                  | &ldquo;Serving the behavioral healthcare needs of seniors and their families on
+                  | Boston&apos;s North Shore.&rdquo;
+
+block mission
+  .content-section-a
+    .container
+      #about.row
+        .col-lg-5.col-sm-6
+          hr.section-heading-spacer
+          .clearfix
+          h2.section-heading Our Mission
+          p.lead
+            | Our mission is to provide high-quality, client-centered behavioral health care to our clients . We provide diagnostic evaluation, individual psychotherapy, family counseling, and behavior management consutation. We assist with referral for medication management, and address the needs of clients with behavioral issues.
+        .col-lg-5.col-lg-offset-2.col-sm-6
+          img.img-responsive(src='img/water.jpg', alt='')
+      .row
+        .col-lg-5.col-lg-offset-1.col-sm-push-6.col-sm-6
+          hr.section-heading-spacer
+          .clearfix
+          h2.section-heading Michele Navon, MSW, LICSW
+        .col-lg-5.col-sm-pull-6.col-sm-6
+          hr.section-heading-spacer
+          .clearfix
+          h2.section-heading Marc Navon, MSW, LICSW, MPH
