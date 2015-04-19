@@ -2,7 +2,10 @@
   "name": "navon-therapy",
   "description": "Navon Therapy Website",
   "version": "0.0.1",
-  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "main": "app.js",
   "dependencies": {
     "grunt": "latest",
     "grunt-contrib-connect": "latest",
