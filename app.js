@@ -14,8 +14,11 @@ require('./app/routes.js')(app);
 app.set('views', __dirname + '/app/views');
 app.set('view engine', 'jade');
 
-app.use(express.static('public'));
-// app.use(express.static(__dirname + '/'));
+//FOR DEV
+// app.use(express.static('public'));
+
+//FOR PRODUCTION
+app.use(express.static(__dirname + '/'));
 
 
 //require routes file
