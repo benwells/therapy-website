@@ -11,7 +11,6 @@
   /*background:none;*/
   background-color:#f8f8f8;
   margin-bottom: 0px;
-
 }
 
 /* center the floated right nav menu */
@@ -51,7 +50,8 @@ img.brand {
 
 /*max height of intro img*/
 #intro-img {
-  max-height:250px;
+  width: 312px;
+  /*max-height:250px;*/
   margin-top: 79px;
 }
 
@@ -78,6 +78,20 @@ img.brand {
 ul#hours .col1 {
   text-align:right;
   padding-right:14px;
+}
+
+#name-title {
+  margin-top: 150px;
+}
+#name-title p {
+  color: rgb(64, 65, 64);
+  font-size: 300%;
+  display: inline;
+}
+#name-title span {
+  display: inline;
+  font-size: 225%;
+  color: rgb(64, 65, 64);
 }
 
 /*move nav over to the left to make room for hours*/
@@ -163,7 +177,7 @@ h6 {
 }
 
 .intro-message  h1 {
-    margin-top: 124px;
+    /*margin-top: 124px;*/
     /*margin: 0;*/
     text-shadow: 1px 1px 2px rgba(0,0,0,0.6);
     /*font-size: 5em;*/
@@ -310,4 +324,8 @@ footer {
 
 p.copyright {
     margin: 15px 0 0;
+}
+
+#water-img {
+  margin-top: 75px;
 }
