@@ -40,8 +40,8 @@ app.use(require('express-session')({
 }));
 app.use(passport.initialize());
 app.use(passport.session());
-// app.use(express.static(__dirname + '/public'));
-app.use(express.static(process.env.OPENSHIFT_REPO_DIR + '/public' ));
+app.use(express.static(__dirname + '/public'));
+// app.use(express.static(process.env.OPENSHIFT_REPO_DIR + '/public' ));
 
 // passport config
 // var Account = require('./app/models/account');
