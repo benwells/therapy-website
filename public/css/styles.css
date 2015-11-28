@@ -316,7 +316,16 @@ h6 {
   }
 }
 
+@media(max-width:450px) {
+  #introtagline {
+    font-size: 120%;
+  }
+}
 @media(max-width:767px) {
+    img.brand {
+      max-width: 280px;
+    }
+
     .intro-message  h1 {
       margin-top:0px;
     }
