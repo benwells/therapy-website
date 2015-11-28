@@ -108,6 +108,7 @@ ul#hours .col1 {
   font-size: 18px;
   padding: 8px;
   margin-top: 4px;
+  margin-right: 3px;
 }
 
 .icon-4 {
@@ -290,6 +291,9 @@ h6 {
     padding-left:0px;
     padding-right:0px;
   }
+  .hide-mobile {
+    display:none;
+  }
 }
 
 @media(max-width:767px) {
@@ -327,6 +331,10 @@ p.copyright {
     margin: 15px 0 0;
 }
 
+#rightbio {
+  margin-top: 30px;
+}
+
 #water-img {
-  margin-top: 75px;
+  margin-top: 30px;
 }

@@ -36,9 +36,9 @@ block nav
       #bs-example-navbar-collapse-1.collapse.navbar-collapse
         ul#navlist.nav.navbar-nav.navbar-right
           li
-            a(href='#about') About
+            a(href='#about') Biography
           li
-            a(href='#services') Services
+            a(href='#services') Education
           li
             a(href='#contact') Contact
       ul#hours.nav.navbar-nav.navbar-right
@@ -52,11 +52,7 @@ block nav
                   | (781) 990-1035
               tr
                 td.col1 Mon - Fri
-                td.col2 8:00am - 8:00pm
-              tr
-                td.col1
-                  Sat
-                td.col2 9:00am - 12:00pm
+                td.col2 7:00am - 6:00pm
 
 block titlepane
   <!-- Header -->
@@ -66,9 +62,9 @@ block titlepane
       .row
         .col-lg-12
           .intro-message
-            .col-lg-6
-              img#intro-img.img-rounded(src='img/marc.jpg', alt='')
-            .col-lg-6
+            .col-lg-6.hide-mobile
+              img#intro-img.img-rounded.img-responsive(src='img/marc.jpg', alt='')
+            .col-lg-6.col-sm-12
               #name-title
                 p Marc Navon
                 span#creds, MSW, LICSW, MPH
@@ -88,11 +84,15 @@ block mission
           img.img.img-responsive(src='img/tree.png')
           hr.section-heading-spacer
           .clearfix
-          h2.section-heading Our Mission
+          h2.section-heading Biography
           p.lead
-            | Our mission is to provide high-quality, client-centered behavioral health care to our clients . We provide diagnostic evaluation, individual psychotherapy, family counseling, and behavior management consutation. We assist with referral for medication management, and address the needs of clients with behavioral issues.
+            | Marc Navon earned his bachelor’s degree in Psychology at the University of Massachusetts, Amherst. He holds two master’s degrees in Social Work from Simmons College in Boston, and in Public health from the University of Massachusetts, Amherst.
+          p.lead
+            | Marc began his clinical career at the North Shore Children’s Hospital in Salem, MA working with children and families in psychiatric inpatient and outpatient settings and on the medical floors.
         .col-lg-5.col-lg-offset-2.col-sm-6
-          img#water-img.img-responsive(src='img/water.jpg', alt='')
+          p.lead#rightbio
+            | He has also held positions as Director of Social Work and Outpatient Departments at Mt. Pleasant Hospital, a substance abuse treatment facility formally in Lynn, MA; Director of Utilization Management at the Massachusetts Department of Mental Health; Operations Manager of the Behavioral Health Program at Neighborhood Health Plan in Boston; and Managing Director of the Center for health Policy and Research at the UMass Medical School in Worcester, MA. Marc has been in private practice since 1986 serving clients of all ages for a variety of behavioral health issues.
+            img#water-img.img-responsive(src='img/water.jpg', alt='')
       //- .row
       //-   .col-lg-5.col-lg-offset-1.col-sm-push-6.col-sm-6
       //-     hr.section-heading-spacer
@@ -111,7 +111,41 @@ block services
             .col-lg-5.col-sm-pull-6.col-sm-6
               hr.section-heading-spacer
               .clearfix
-              h2.section-heading Services
+              h2.section-heading Licensure/Certification/Education
+          .row
+            .col-lg-5.col-lg-offset-1.col-sm-push-6.col-sm-6
+              .clearfix
+              h3
+                i.fa.fa-certificate.icon-4
+                |       Licensure/Certification
+              p.lead
+                .panel.panel-default(style="font-size:130%")
+                  .panel-heading Licensed Independent Clinical Social Worker (LICSW), Mass. License #: 105701
+                  .panel-body Child Assessment of Needs and Strengths (CANS) Certificate #: 00b1c29a-ca44-4cf5-a970-8719a5b766a4
+                  .panel-footer NPI #: 13169212306
+            .col-lg-5.col-sm-pull-6.col-sm-6
+              .clearfix
+              h3
+                i.fa.fa-institution
+                |  Education
+              p.lead(style="text-align:center;margin-top:65px;")
+                b UNIVERSITY OF MASSACHUSETTS, Amherst, MA
+                br
+                i  Master of Public Health, May 2010
+                br
+                br
+                b  SIMMONS COLLEGE, Boston, MA
+                br
+                i  Master of Social Work May 1981
+                br
+                br
+                b  UNIVERSITY OF MASSACHUSETTS, Amherst, MA
+                br
+                i  Master of Public Health
+                br
+                i  B. A. in Psychology, Cum Laude May 1977
+              
+
           .row
             .col-lg-5.col-lg-offset-1.col-sm-push-6.col-sm-6
               .clearfix
@@ -119,49 +153,24 @@ block services
                 i.fa.fa-medkit
                 |  Treatment Expertise
               p.lead
-                ul
-                  li &ZeroWidthSpace;ADHD
-                  li Aging (Geriatric)
-                  li Alcohol and Drug Abuse and Dependence
-                  li Anxiety
-                  li Behavior Management
-                  li Chronic Medical IllnessDepression
-                  li Grief/Loss
-                  li Marital and Family Problems
-                  li Parenting Issues
-                  li Work/Career Issues
-            .col-lg-5.col-sm-pull-6.col-sm-6
-              .clearfix
-              h3
-                i.fa.fa-home.icon-4
-                |  Home Visits
-              p.lead
-                | We know how difficult it can be for seniors to get to the office for appointments, so we are able to see clients in the comfort of their home. We are Medicare providers and bill private insurers directly.
-          .row
-            .col-lg-5.col-lg-offset-1.col-sm-push-6.col-sm-6
-              .clearfix
-              br
-              br
-              br
-              p.lead
-                | Nearly 20 percent of elders experience serious mental health issues that are not a normal part of aging. The most common disorders, in order of prevalence, are: anxiety, severe cognitive impairment, and mood disorders. It is estimated that only half who acknowledge these problems receive treatment from any health care provider (Lebowitz, et al, 1997).
-                br
-                br
-                | We help our clients and families with the following issues:
-              p
-                ul
+                | Mr. Navon has expertise treating people of all ages with a wide range of difficulties, including:
+                ul(style="font-size:120%")
                   li Depression
                   li Anxiety
-                  li Coping with Loss
-                  li Social Isolation
-                  li Assessing Care and&#x2028; Placement Needs
+                  li Bipolar Disorder
+                  li Addictions (Alcohol, Opiates and other substances)
+                  li Attention Deficit Disorder
+                  li Marital and Family Problems
+                  li Career Challenges
+                  li Other Psychiatric Difficulties
             .col-lg-5.col-sm-pull-6.col-sm-6
               .clearfix
-              h3
-                i.fa.fa-heart
-                |  Elder Care
-              p.lead
-                | Marc Navon is pleased to offer behavioral health evaluation and treatment services for seniors living at home and in elder care residences, such as assisted living. They are both seasoned Licensed Independent Clinical Social Workers with specific expertise in geriatric mental health. Together, the husband and wife team has decades of clinical experience in evaluation, individual psychotherapy, family counseling, and group therapy. We also help families work through the difficult decisions regarding the care and placement needs of their loved ones.
+              h3 
+                i.fa.fa-file-pdf-o
+                |    Resume
+              p.lead 
+                a(href="/docs/Marc-Navon-Clinical-Resume.pdf", target="_blank") Click Here to View Mr. Navon's Clinical Resume
+
 
 block healthplans
   .content-section-a
@@ -170,24 +179,24 @@ block healthplans
             .col-lg-5.col-sm-6
               hr.section-heading-spacer
               .clearfix
-              h2.section-heading Supported Health Plans
+              h2.section-heading Insurances Accepted
               p.lead
-                span.badge AmeriChoice
-                span.badge BlueCross BlueSheild National Preferred Networks
-                span.badge Building Service 32BJ Benefit Fund
-                span.badge Champus
-                span.badge Cigna HMO/PPO
-                span.badge Cigna International
-                span.badge CompraCare
-                span.badge Emblem Health
-                span.badge Empire BlueCross BlueSheild
-                span.badge GHI
-                span.badge Health Care Workers Local 1199 (all plans except the HMO plan)
-                span.badge HIP Health Plan of New York
-                span.badge International SOS
-                span.badge Medicare (most locations)
-                span.badge Multiplan - PHCS (most plans accepted)
-                span.badge NY Graphic Arts Benefit Group
+                span.badge BC/BS
+                span.badge Beacon Health Options
+                span.badge Boston Medical Center/HealthNet
+                span.badge Harvard Pilgrim Health Plan
+                span.badge Medicaid
+                span.badge Medicare
+                span.badge MassHealth
+                span.badge Mass Behavioral Health Partnership
+                span.badge Network Health
+                span.badge TriCare
+                span.badge Tufts Health Plan
+                span.badge UniCare
+                span.badge United Behavioral Health
+                span.badge United Healthcare
+                span.badge Value Options
+                span.badge Neighborhood Health Plan and Fallon
             .col-lg-5.col-lg-offset-2.col-sm-6
               img.img-responsive(src='img/pebbles.jpg', alt='', style='margin-top:40px;')
 
@@ -241,10 +250,10 @@ block footer
                   a(href='#') Home
                 li.footer-menu-divider &sdot;
                 li
-                  a(href='#about') About
+                  a(href='#about') Biography
                 li.footer-menu-divider &sdot;
                 li
-                  a(href='#services') Services
+                  a(href='#services') Education
                 li.footer-menu-divider &sdot;
                 li
                   a(href='#contact') Contact
