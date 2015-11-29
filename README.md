@@ -1,5 +1,5 @@
-# navon-therapy
-Node/express app for navontherapy.com
+# Therapy Website
+Node/express app 
 
 ## Includes:
  - Gruntfile
